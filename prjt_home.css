@@ -529,4 +529,11 @@ h3{
   outline: none;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  box-shadow: 0 0 20px 0 #9f9fa6;
+}
+
+.con-col span{
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 #9f9fa6;
 }
