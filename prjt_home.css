@@ -6,12 +6,18 @@
 }
 
 .nav_icons {
+  display: flex;
   width: 100%; /* Full-width */
-  padding: 4px;
+  padding:4px;
   background-color: #e1d2d2; /* Dark-grey background */
-  overflow: auto; /* Overflow due to float */
+  overflow:auto; /* Overflow due to float */
   border-bottom: 4px black;
   transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.nav_icons p{
+  font-size: large;
+  margin-top: -15px;
 }
 
 .nav_icons .fab:hover { /* Add a hover color */
@@ -191,6 +197,17 @@ p{
   justify-content: flex-end;
 }
 
+.course hr{
+  border: none;
+  height: 2px;
+  background-color: black;
+  margin:20px 0;
+}
+
+.row_1 .course-col{
+  background-color: #eafcec;
+}
+
 .row{
   margin-top: 6%;
   display:flex;
@@ -229,7 +246,7 @@ h3{
     text-align: center;
     padding: 30px 0;
     border-radius: 20px;
-    background-color: #363846;
+    background-color: #31313c;
   }
 
   .footer a{
@@ -250,9 +267,11 @@ h3{
     text-decoration: underline;
   }
 
-  .footer h5{
+  .footer .abl{
     display:block;
     font-style: italic;
+    font-weight: 500;
+    font-size: 30px;
     margin-left: 50px;
     margin-right: 50px;
     border: 1px solid #fff;
@@ -263,7 +282,7 @@ h3{
     cursor: pointer;
   }
 
-  .footer h5:hover{
+  .footer .abl:hover{
     font-weight: 500;
     font-style: italic;
     border: 1px solid #2169e6;
@@ -376,4 +395,138 @@ h3{
   .cta h1{
       font-size: 24px;
   }
+}
+
+
+/*------------- about us page ------------*/
+.sub-header{
+  height:60vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(../Images/hyperfuse_bg.jpg);
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  background-size: cover;
+}
+.sub-header h1{
+  margin-top: 50px;
+}
+
+.sub-header a{
+  color: #26a7f7;
+}
+
+.about-us{
+  width: 95%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.about-col{
+  flex-basis: 50%;
+  padding: 20px 20px;
+}
+.about-col img{
+  width: 100%;
+}
+.about-col h1{
+  padding-top: 0;
+}
+.about-col p{
+  padding: 15px 0 25px;
+}
+
+.hero-btn.red-btn{
+  border: 1px solid #f44336;
+  background: transparent;
+  color: #f44336;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 10px 12px;
+}
+.red-btn:hover{
+  color: #fff;
+  background-color: #f44336;
+}
+
+ .cta_2{
+  margin-left: 30px;
+  margin-block: 20px;
+  height: 60px;
+  width: 95%;
+  background-color: rgb(97, 60, 94);
+  background-position: center;
+  border-radius: 10px;
+  text-align: center;
+  padding: 80px 20px;
+  background-size: 100% 100%;
+}
+
+.cta_2 .course-col{
+  background: transparent;
+  color: #ffffff;
+  margin-top: -50px;
+}
+
+.cta_2 .course-col:hover{
+  box-shadow:inherit;
+}
+
+.cta_2 p{
+  color: tomato;
+}
+
+@media(max-width: 700px){
+  .cta_2{
+    padding-bottom: 90%;
+    margin-left: 15px;
+  }
+}
+
+/* Contact us page*/
+.location{
+  width: 95%;
+  margin: auto;
+  padding: 50px 0;
+}
+.location iframe{
+  width: 100%;
+}
+
+.con-us{
+  width: 80%;
+  margin: auto;
+}
+.con-col{
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+.con-col div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.con-col div .fa-solid{
+  font-size: 28px;
+  color: #fa5656;
+  margin: 10px;
+  margin-right: 20px;
+}
+.con-col div p{
+  padding: 0;
+}
+.con-col div h5{
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 400;
+}
+
+.con-col input, .con-col textarea{
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
